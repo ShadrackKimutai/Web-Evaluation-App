@@ -53,7 +53,7 @@
                 </div>
 
 
-                <p><input type="submit"  class="btn btn-red" value="Next Parameter"></p>
+                <p><input type="submit"  class="btn btn-red" value="View Results"></p>
 
             </form>
 

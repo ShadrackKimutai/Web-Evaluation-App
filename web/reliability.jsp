@@ -20,6 +20,15 @@
             <h1 class="box">Reliability</h1>
             <p class="panel-body">Based on Reliability, How do you rate the following Features.</p>
             <form method="POST"  action="interface.jsp">
+   <div class="panel">
+                    <span class="panel-heading"> Availability  </span>
+                    <br>
+                    &nbsp;<input type="radio" name="availability" value="0.25" title="Bad" >Bad &nbsp;
+                    &nbsp;<input type="radio" name="availability" value="0.5" title="Fair">Fair &nbsp;
+                    &nbsp;<input type="radio" name="availability" value="0.75" title="Good">Good &nbsp;
+                     &nbsp;<input type="radio" name="availability" value="1" title="Excellent">Excellent &nbsp;        <br />
+                   
+                </div>
 
                 <div class="panel">
                     <span class="panel-heading"> Rcoverability </span>
@@ -51,16 +60,7 @@
                     &nbsp;<input type="radio" name="informationconsistency" value="1" title="Excellent">Excellent &nbsp;        <br />
                     <br>
                 </div>
-<div class="panel">
-                    <span class="panel-heading"> Availability  </span>
-                    <br>
-                    &nbsp;<input type="radio" name="avalablity" value="0.25" title="Bad" >Bad &nbsp;
-                    &nbsp;<input type="radio" name="avalablity" value="0.5" title="Fair">Fair &nbsp;
-                    &nbsp;<input type="radio" name="avalablity" value="0.75" title="Good">Good &nbsp;
-                    &nbsp;<input type="radio" name="avalablity" value="1" title="Excellent">Excellent &nbsp;        <br />
-                    <br>
-                </div>
-
+             
                 <p><input type="submit"  class="btn btn-red" value="Next Parameter"></p>
 
             </form>

@@ -21,14 +21,15 @@
             <p class="panel-body">Based on Your Evaluation, the following are the results.</p>
           
                 <div class="panel">
-                    <span class="panel-heading1"> Content Results</span>
+                    <span class="panel-heading1"> Content Results </span>
                     <br>
                     Currency of Information: <jsp:getProperty name="save" property="currencyofinfo" /><br>
                     Accuracy of Information: <jsp:getProperty name="save" property="accuracyofinfo" /><br>
                     Authority of Information: <jsp:getProperty name="save" property="authorityofinfo" /><br>
                     Clarity of Information: <jsp:getProperty name="save" property="clarityofinfo" /><br>
                     Relevance of Information: <jsp:getProperty name="save" property="relevanceofinfo" /><br>
-                    
+                    <br>
+                    <span class="panel-footer">Total: <jsp:getProperty name="save" property="aggegateContent" />/20.0</span>
                 </div>
                 <div class="panel">
                     <span class="panel-heading1"> Usability Results </span>
@@ -36,9 +37,11 @@
                     Understandability:<jsp:getProperty name="save" property="understandability" /><br>
                     Suitability: <jsp:getProperty name="save" property="suitability" /><br>
                     Interactivity: <jsp:getProperty name="save" property="interactivity" /><br>
-                    StraightForwardness: <jsp:getProperty name="save" property="straightforwardness" />
+                    StraightForwardness: <jsp:getProperty name="save" property="straightforwardness" /><br>
                     Learnability: <jsp:getProperty name="save" property="learnability" /><br>
                     Operability: <jsp:getProperty name="save" property="operability" /><br>
+                <br>
+                    <span class="panel-footer">Total: <jsp:getProperty name="save" property="aggregateUsability" />/24.0</span>
                 </div>
 
                      <div class="panel">
@@ -48,8 +51,9 @@
                     Time Factor: <jsp:getProperty name="save" property="timefactor" /><br>
                     Feed Back: <jsp:getProperty name="save" property="feedback" /><br>
                     Accessibility: <jsp:getProperty name="save" property="accessibility" />
-                    
-                     <br>
+                       <br>
+                       <span class="panel-footer">Total: <jsp:getProperty name="save" property="aggregateEfficiency" />/16.0</span>
+               
                 </div>
                     
                      <div class="panel">
@@ -59,7 +63,8 @@
                     Fault Tolerance: <jsp:getProperty name="save" property="faulttolerance" /><br>
                     Information Consistency: <jsp:getProperty name="save" property="informationconsistency" /><br>
                     Availability: <jsp:getProperty name="save" property="availability" />
-                     <br>
+                     <br>    <span class="panel-footer">Total: <jsp:getProperty name="save" property="aggregateReliability" />/16.0</span>
+               
                 </div>
                     
                         <div class="panel">
@@ -68,7 +73,8 @@
                     Search and Retrieval: <jsp:getProperty name="save" property="searchandretrieval" /><br>
                     Navigation: <jsp:getProperty name="save" property="navigation" /><br>
                     Inter Operability: <jsp:getProperty name="save" property="interoperability" />
-                     <br>
+                     <br> <span class="panel-footer">Total: <jsp:getProperty name="save" property="aggregateFunctionality" />/12.0</span>
+               
                 </div>
                     
                         <div class="panel">
@@ -77,7 +83,8 @@
                     Aesthetics: <jsp:getProperty name="save" property="aesthetics" /><br>
                     No Page Overcrowding: <jsp:getProperty name="save" property="nopageovercrowding" /><br>
                     Consistent Page Alignment: <jsp:getProperty name="save" property="alignment" />
-                     <br>
+                     <br> <span class="panel-footer">Total: <jsp:getProperty name="save" property="aggregateInterface" />/12.0</span>
+               
                 </div>
                     
                 <div class="panel">
@@ -85,10 +92,15 @@
                     <br>
                     Security Policy: <jsp:getProperty name="save" property="securitypolicy" /><br>
                     Protection against Hacking: <jsp:getProperty name="save" property="protectionagainsthacking" />
-                    <br>
+                    <br><span class="panel-footer">Total: <jsp:getProperty name="save" property="aggregateSecurity" />/8.0</span>
+               
                 </div>
                 
-
+            <div class="panel-final">
+                    <span class="panel-headingf">Website Aggregate Results </span>
+                    <br>Total Score: <jsp:getProperty name="save" property="aggregateScore" />/108
+                    <br>Average Score:<jsp:getProperty name="save" property="averageaggregateScore" />
+                </div>
                 
            
 

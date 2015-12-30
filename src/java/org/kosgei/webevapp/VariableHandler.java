@@ -39,9 +39,17 @@ public class VariableHandler {
     private double aesthetics;
     private double nopageovercrowding;
     private double alignment;
+    private double aggregateContent;
+    private double aggregateUsability;
+    private double aggregateEfficiency;
+    private double aggregateReliability;
+    private double aggregateFunctionality;
+    private double aggregateInterface;
+    private double aggregateSecurity;
+    private double score;
 
     public VariableHandler() {
-        this.understandability=0;
+        this.understandability = 0;
         this.suitability = 0;
         this.straightforwardness = 0;
         this.content = 0;
@@ -223,7 +231,7 @@ public class VariableHandler {
      * @return the securitypolicy
      */
     public double getSecuritypolicy() {
-        return securitypolicy* 4;
+        return securitypolicy * 4;
     }
 
     /**
@@ -307,7 +315,7 @@ public class VariableHandler {
      * @return the accuracyofinfo
      */
     public double getAccuracyofinfo() {
-        return accuracyofinfo* 4;
+        return accuracyofinfo * 4;
     }
 
     /**
@@ -321,7 +329,7 @@ public class VariableHandler {
      * @return the authorityofinfo
      */
     public double getAuthorityofinfo() {
-        return authorityofinfo* 4;
+        return authorityofinfo * 4;
     }
 
     /**
@@ -335,7 +343,7 @@ public class VariableHandler {
      * @return the clarityofinfo
      */
     public double getClarityofinfo() {
-        return clarityofinfo* 4;
+        return clarityofinfo * 4;
     }
 
     /**
@@ -349,7 +357,7 @@ public class VariableHandler {
      * @return the relevanceofinfo
      */
     public double getRelevanceofinfo() {
-        return relevanceofinfo* 4;
+        return relevanceofinfo * 4;
     }
 
     /**
@@ -363,7 +371,7 @@ public class VariableHandler {
      * @return the recoverability
      */
     public double getRecoverability() {
-        return recoverability* 4;
+        return recoverability * 4;
     }
 
     /**
@@ -377,7 +385,7 @@ public class VariableHandler {
      * @return the faulttolerance
      */
     public double getFaulttolerance() {
-        return faulttolerance* 4;
+        return faulttolerance * 4;
     }
 
     /**
@@ -391,7 +399,7 @@ public class VariableHandler {
      * @return the informationconsistency
      */
     public double getInformationconsistency() {
-        return informationconsistency* 4;
+        return informationconsistency * 4;
     }
 
     /**
@@ -405,7 +413,7 @@ public class VariableHandler {
      * @return the availability
      */
     public double getAvailability() {
-        return availability* 4;
+        return availability * 4;
     }
 
     /**
@@ -419,7 +427,7 @@ public class VariableHandler {
      * @return the aesthetics
      */
     public double getAesthetics() {
-        return aesthetics* 4;
+        return aesthetics * 4;
     }
 
     /**
@@ -433,7 +441,7 @@ public class VariableHandler {
      * @return the nopageovercrowding
      */
     public double getNopageovercrowding() {
-        return nopageovercrowding* 4;
+        return nopageovercrowding * 4;
     }
 
     /**
@@ -447,7 +455,7 @@ public class VariableHandler {
      * @return the alignment
      */
     public double getAlignment() {
-        return alignment* 4;
+        return alignment * 4;
     }
 
     /**
@@ -461,7 +469,7 @@ public class VariableHandler {
      * @return the understandability
      */
     public double getUnderstandability() {
-        return understandability* 4;
+        return understandability * 4;
     }
 
     /**
@@ -471,4 +479,56 @@ public class VariableHandler {
         this.understandability = understandability;
     }
 
+    public double getaggegateContent() {
+        aggregateContent = currencyofinfo * 4 + accuracyofinfo * 4 + authorityofinfo * 4 + relevanceofinfo * 4 + clarityofinfo * 4;
+        return aggregateContent;
+    }
+
+    public double getaggregateUsability() {
+
+        aggregateUsability = understandability * 4 + suitability * 4 + interactivity * 4 + straightforwardness * 4 + learnability * 4 + operability * 4;
+        return aggregateUsability;
+    }
+
+    public double getaggregateEfficiency() {
+        aggregateEfficiency = loadability * 4 + timefactor * 4 + feedback * 4 + accessibility * 4;
+        return aggregateEfficiency;
+    }
+
+    public double getaggregateReliability() {
+        aggregateReliability = recoverability * 4 + faulttolerance * 4 + informationconsistency * 4 + availability * 4;
+        return aggregateReliability;
+    }
+
+    public double getaggregateFunctionality() {
+        aggregateFunctionality = searchandretrieval * 4 + navigation * 4 + interoperability * 4;
+        return aggregateFunctionality;
+    }
+
+    public double getaggregateInterface() {
+        aggregateInterface = aesthetics * 4 + nopageovercrowding * 4 + alignment * 4;
+        return aggregateInterface;
+    }
+
+    public double getaggregateSecurity() {
+        aggregateSecurity = securitypolicy * 4 + protectionagainsthacking * 4;
+        return aggregateSecurity;
+    }
+
+    public double getaggregateScore() {
+        score = currencyofinfo * 4 + accuracyofinfo * 4 + authorityofinfo * 4 + relevanceofinfo * 4 + clarityofinfo * 4 + understandability * 4 + suitability * 4 + interactivity * 4 + straightforwardness * 4 + learnability * 4 + operability * 4 + loadability * 4 + timefactor * 4 + feedback * 4 + accessibility * 4 + recoverability * 4 + faulttolerance * 4 + informationconsistency * 4 + availability * 4 + searchandretrieval * 4 + navigation * 4 + interoperability * 4 + aesthetics * 4 + nopageovercrowding * 4 + alignment * 4 + securitypolicy * 4 + protectionagainsthacking * 4;
+        return score;
+    }
+
+    public String getaverageaggregateScore() {
+        score = currencyofinfo * 4 + accuracyofinfo * 4 + authorityofinfo * 4 + relevanceofinfo * 4 + clarityofinfo * 4 + understandability * 4 + suitability * 4 + interactivity * 4 + straightforwardness * 4 + learnability * 4 + operability * 4 + loadability * 4 + timefactor * 4 + feedback * 4 + accessibility * 4 + recoverability * 4 + faulttolerance * 4 + informationconsistency * 4 + availability * 4 + searchandretrieval * 4 + navigation * 4 + interoperability * 4 + aesthetics * 4 + nopageovercrowding * 4 + alignment * 4 + securitypolicy * 4 + protectionagainsthacking * 4;
+        double meanscore = score / 27;
+        if ((meanscore) <= 1.0) {
+            return String.valueOf(score / 27) + " Website Quality is Below Average";
+
+        } else {
+            return String.valueOf(meanscore);
+
+        }
+    }
 }

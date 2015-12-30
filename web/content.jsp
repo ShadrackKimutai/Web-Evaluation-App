@@ -22,14 +22,14 @@
 
                 <div class="panel">
                     <span class="panel-heading"> Currency of Information </span>
-                    <br>
-
+                
+<Br>
                     &nbsp;<input type="radio" name="currencyofinfo" value="0.25" title="Bad" >Bad  &nbsp;
                     &nbsp;<input type="radio" name="currencyofinfo" value="0.5" title="Fair">Fair  &nbsp;
                     &nbsp;<input type="radio" name="currencyofinfo" value="0.75" title="Good">Good  &nbsp;
                     &nbsp;<input type="radio" name="currencyofinfo" value="1" title="Excellent">Excellent  &nbsp;        <br />
 
-                    <br>
+                   
                 </div>
                 <div class="panel">
                     <span class="panel-heading"> Accuracy of Information </span>
@@ -38,7 +38,7 @@
                     &nbsp;<input type="radio" name="accuracyofinfo" value="0.5" title="Fair">Fair  &nbsp;
                     &nbsp;<input type="radio" name="accuracyofinfo" value="0.75" title="Good">Good  &nbsp;
                     &nbsp;<input type="radio" name="accuracyofinfo" value="1" title="Excelent">Excellent  &nbsp;        <br />
-                    <br>
+                    
                 </div>
 
                 <div class="panel">
@@ -48,7 +48,7 @@
                     &nbsp;<input type="radio" name="authorityofinfo" value="0.5" title="Fair">Fair &nbsp;
                     &nbsp;<input type="radio" name="authorityofinfo" value="0.75" title="Good">Good &nbsp;
                     &nbsp;<input type="radio" name="authorityofinfo" value="1" title="Excellent">Excellent &nbsp;        <br />
-                    <br>
+                   
                 </div>
                 <div class="panel">
                     <span class="panel-heading"> Clarity of Information </span>
@@ -57,7 +57,7 @@
                     &nbsp;<input type="radio" name="clarityofinfo" value="0.5" title="Fair">Fair &nbsp;
                     &nbsp;<input type="radio" name="clarityofinfo" value="0.75" title="Good">Good &nbsp;
                     &nbsp;<input type="radio" name="clarityofinfo" value="1" title="Excellent">Excellent &nbsp;        <br />
-                    <br>
+                    
                 </div>
                  <div class="panel">
                     <span class="panel-heading"> Relevance of Information </span>
@@ -67,10 +67,13 @@
                     &nbsp;<input type="radio" name="relevanceofinfo" value="0.75" title="Good">Good &nbsp;
                     &nbsp;<input type="radio" name="relevanceofinfo" value="1" title="Excellent">Excellent &nbsp;        <br />
                     <br>
-                </div>
+               
 
 
-                <p><input type="submit"  class="btn btn-red" value="Next Parameter"></p>
+                <p>
+                   
+                   <input type="submit"  class="btn btn-red" value="Next Parameter"></p> 
+               
 
             </form>
 
